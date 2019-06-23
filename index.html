@@ -57,6 +57,21 @@
   -webkit-text-stroke-color: 'ccffff';
 }
     
+    .blink{
+    animation:blinkingText 4s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #B233FF;    }
+    24%{     color: #B233FF;    }
+    25%{    color: transparent; }
+    49%{    color: transparent; }
+    50%{    color: B233FF; }
+    74%{    color: B233FF; }
+    75%{    color:transparent;  }
+    99%{    color:transparent;  }
+    100%{   color: #B233FF;    }
+}
+    
 
     
     </style>
@@ -71,7 +86,7 @@ link="#cc99ff" vlink="#66cccc" alink="#ff0066">
 <img src="banner.gif" alt="Thanos Collective">
 <br>
 <font size="6">
-<blink><font color="#B233FF"> Thanos Collective</font ></font ></blink>
+<font color="#B233FF" class="blink"> Thanos Collective</font ></font >
 
 
 </a>
